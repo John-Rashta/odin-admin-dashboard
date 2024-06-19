@@ -37,6 +37,10 @@ img {
 
 /* basic layout */
 
+body {
+    margin: 0px;
+}
+
 .header {
     background-color: brown;
 }
@@ -44,6 +48,7 @@ img {
 .sidebar {
     background-color: blue;
     grid-row: 1 / 3;
+    color: white;
 }
 
 .main {
@@ -54,4 +59,13 @@ img {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
+}
+
+/* Sidebar layout */
+
+.sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr repeat(2, 1fr) 3fr;
+    align-items: start;
 }
