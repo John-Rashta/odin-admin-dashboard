@@ -33,3 +33,25 @@ img {
   display: block;
   max-inline-size: 100%;
 }
+
+
+/* basic layout */
+
+.header {
+    background-color: brown;
+}
+
+.sidebar {
+    background-color: blue;
+    grid-row: 1 / 3;
+}
+
+.main {
+    background-color: red;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
