@@ -93,3 +93,31 @@ img {
 
 
 /* header layout */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left : 20px;
+  padding-right: 70px;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.search>input {
+  margin-right: 10%;
+}
+
+
+.user-buttons {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto;
+  align-items: center;
+  gap: 20px;
+}
+
+/* main layout */
