@@ -130,21 +130,15 @@ img {
 .main {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  padding: 20px 40px;
+  padding: 30px 40px 20px;
+  row-gap: 30px;
 }
 
 .projects {
   grid-row: 1 / 3;
-}
-
-.announcements {
-  background-color: yellow;
-  
-}
-
-.trending {
-  background-color: pink;
-  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 .pro-icons {
@@ -218,8 +212,8 @@ img {
   height: auto;
 }
 
-.cat {
-  background-color: orange;
+.avatar {
+  background-color: rgb(255, 208, 0);
   padding: 10%;
   object-fit: contain;
   width: 40px;
@@ -281,17 +275,80 @@ img {
 }
 
 .projects {
-  padding: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .title {
   margin-bottom: 10px;
 }
 
-.name {
-  color: black;
-  font-size: 1.5rem;
+.announcements-main>div {
+  color: gray;
+  font-size: min(0.8rem, 1.5vw);
+  padding: 20px 0px;
 }
+
+.anno-title {
+  color: black;
+  font-size: min(1rem, 2vw);
+}
+
+.announcements-main {
+  background-color: white;
+  border-radius: 10px 10px;
+  padding: 10px 30px;
+}
+
+.announcements-main>div:nth-child(n+2) {
+  border-top: solid #e5e7eb 2px;
+}
+
+
+.name,
+.title {
+  color: black;
+  font-size: min(1.5rem, 3vw);
+}
+
+.penguin {
+  background-color: pink;
+  height: 40px;
+}
+
+.othercat {
+  background-color: rgb(196, 222, 238);
+}
+
+.bear {
+  background-color: rgb(186, 219, 148);
+}
+
+.trending-main {
+  background-color: white;
+  gap: 30px;
+  padding: 20px 10px;
+  border-radius: 10px 10px;
+  color: black;
+  font-size: min(1rem, 2vw);
+}
+
+.trending-main>div>div+div {
+  color: gray;
+}
+
+.main {
+  box-shadow: inset 0 10px 10px lightgray;
+}
+
+.projects-main>div,
+.announcements-main,
+.trending-main {
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+
+
 
 
 
